@@ -20799,7 +20799,7 @@ TableProcessor.prototype.endRow = function(rowIndex, writer, pageBreaks) {
         this.reservedAtBottom = 0;
       }
 
-      for(i = 0, l = xs.length; i < l; i++) {
+      for(var i = 0, l = xs.length; i < l; i++) {
         this.drawVerticalLine(xs[i].x, y1 - hzLineOffset, y2 + this.bottomLineWidth, xs[i].index, writer);
         if(i < l-1) {
           var colIndex = xs[i].index;
